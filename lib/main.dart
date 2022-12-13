@@ -2,6 +2,7 @@ import 'package:bmi/controllers/bmi_controller.dart';
 import 'package:bmi/controllers/url_controller.dart';
 import 'package:bmi/presentation/drawer_page.dart';
 import 'package:bmi/presentation/mobile/mobile_history_page.dart';
+import 'package:bmi/presentation/splash_page.dart';
 import 'package:bmi/repository/shared_repository.dart';
 import 'package:bmi/shared/theme/bmi_theme.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,8 @@ class MyApp extends StatelessWidget {
         theme: BmiTheme.theme,
         initialRoute: '/',
         routes: {
-          '/': (context) => DrawerBody(),
+          '/': (context) => SplashPage(),
+          '/drawer': (context) => DrawerBody(),
           '/home': (context) => HomePage(),
           '/result': (context) => ResultPage(),
           '/history': (context) => HistoryPage(),
