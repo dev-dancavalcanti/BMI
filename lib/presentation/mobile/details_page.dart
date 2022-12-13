@@ -61,7 +61,7 @@ class DetailsPage extends StatelessWidget {
                 GestureDetector(
                     onTap: () {
                       Navigator.of(context)
-                          .pushNamedAndRemoveUntil('/', (route) => false);
+                          .pushNamedAndRemoveUntil('/drawer', (route) => false);
                       controller.clearValues();
                     },
                     child: BmiContainer(
