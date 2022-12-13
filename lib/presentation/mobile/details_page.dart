@@ -66,15 +66,15 @@ class DetailsPage extends StatelessWidget {
                     },
                     child: BmiContainer(
                       color: Color(0xFF60cfda),
-                      width: .55,
+                      width: .45,
                       height: .065,
                       child: Center(
                           child: Text(
-                        'Try Again',
+                        'Calculate Again',
                         style: TextStyle(
                             fontFamily: 'Nimbus',
-                            color: Colors.black,
-                            fontSize: 17),
+                            fontSize: 16,
+                            color: Colors.white),
                       )),
                     ))
               ],

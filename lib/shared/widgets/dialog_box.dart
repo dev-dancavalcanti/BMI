@@ -40,9 +40,9 @@ class DialogBox extends StatelessWidget {
               children: [
                 MyButton(
                     text: 'Save',
-                    onPressed: () {
-                      controller.calculateBmi();
-                      controller.saveBMI();
+                    onPressed: () async {
+                      await controller.calculateBmi();
+                      await controller.saveBMI();
                       Navigator.of(context).pop();
                       Navigator.of(context).pushNamed('/result');
                     }),
